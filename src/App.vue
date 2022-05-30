@@ -42,4 +42,8 @@ footer {
 main {
   height: 80%;
 }
+
+header span {
+  padding: 0 20px;
+}
 </style>

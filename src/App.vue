@@ -1,15 +1,7 @@
 <script></script>
 
 <template>
-  <header>
-    <span class="texto-header">Home</span>
-    <span class="separador">|</span>
-    <span class="texto-header">Times</span>
-    <span class="separador">|</span>
-    <span class="texto-header">Jogadores</span>
-  </header>
-  <main>main</main>
-  <footer>Rodapé</footer>
+  <RouterView />
 </template>
 
 <style>
@@ -36,6 +28,7 @@ footer {
   font-size: 1.3rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 15px;
 }
 

@@ -1,4 +1,4 @@
 <template>
-  <main>main</main>
-  <footer>footer</footer>
+  <main>Camavinga melhor do mundo</main>
+  <footer>Rodapézinho chave</footer>
 </template>

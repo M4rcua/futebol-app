@@ -1,4 +1,4 @@
 <template>
-  <main></main>
-  <footer></footer>
+  <main>Times bons</main>
+  <footer>Rodapé chave demais</footer>
 </template>

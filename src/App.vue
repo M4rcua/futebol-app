@@ -1,10 +1,14 @@
 <script setup>
 import HeaderComp from "@/components/template/HeaderComp.vue";
+import FooterComp from "@/components/template/FooterComp.vue";
 </script>
 
 <template>
   <HeaderComp />
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
+  <FooterComp />
 </template>
 
 <style>
@@ -30,15 +34,10 @@ footer {
   font-size: 1.3rem;
   display: flex;
   align-items: center;
-  
   padding-left: 15px;
 }
 
-main {
-  height: 80%;
-}
- 
-.router-link-active{
+.router-link-active {
   color: rgb(57, 192, 163);
 }
 </style>

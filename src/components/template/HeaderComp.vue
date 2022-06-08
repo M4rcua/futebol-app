@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="menu-esquerdo">
-      <span> <RouterLink to="/">Home</RouterLink>  </span>
+      <span> <RouterLink to="/">Home</RouterLink> </span>
       <span>|</span>
       <span><RouterLink to="/times">Times</RouterLink></span>
       <span>|</span>
@@ -15,12 +15,11 @@
 </template>
 
 <style>
-
 header span {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
-header{
+header {
   height: 10%;
   background-color: rgba(8, 255, 61, 0.226);
   color: white;

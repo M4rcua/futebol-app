@@ -18,6 +18,10 @@ body {
   background-color: rgba(218, 212, 212, 0.534);
 }
 
+main {
+  height: 80%;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -25,16 +29,6 @@ body {
   /* padding: 2rem; */
 
   font-weight: normal;
-}
-
-footer {
-  height: 10%;
-  background-color: rgba(113, 182, 23, 0.473);
-  color: white;
-  font-size: 1.3rem;
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
 }
 
 .router-link-active {

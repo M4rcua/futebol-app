@@ -1,6 +1,19 @@
-<template>
-  <main>Times bons</main>
+<script>
+export default {
+  data() {
+    return {
+      times: [
+        { id: 1, nome: "Time1" },
+        { id: 2, nome: "Time2" },
+        { id: 3, nome: "Time3" },
+      ],
+    };
+  },
+};
+</script>
 
+<template>
+  <h1></h1>
   <div class="container">
     <div class="title">
       <h2>Gerenciamento dos Times</h2>
@@ -23,20 +36,10 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Time 1</td>
-          <td>alguma coisa</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Time 2</td>
-          <td>alguma coisa</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Time 3</td>
-          <td>alguma coisa</td>
+        <tr v-for="time in times" :key="time.id">
+          <td>{{ time.id }}</td>
+          <td>{{ time.nome }}</td>
+          <td>???</td>
         </tr>
       </tbody>
     </table>
@@ -51,7 +54,6 @@
 .form-input {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 2rem 0;
 }
 

@@ -21,11 +21,11 @@ export default {
   </div>
 
   <div class="form-input">
-    <input type="text" />
+    <input type="text" placeholder="Nome do jogador" />
     <button>Salvar</button>
   </div>
   <div class="form-input">
-    <input type="text" />
+    <input type="text" placeholder="Time" />
     <button>Salvar</button>
   </div>
 

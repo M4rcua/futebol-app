@@ -1,4 +1,16 @@
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      jogadores: [
+        { id: 1, nome: "Jogador1" },
+        { id: 2, nome: "Jogador2" },
+        { id: 3, nome: "Jogador3" },
+      ],
+    };
+  },
+};
+</script>
 
 <template>
   <h1></h1>
@@ -28,20 +40,10 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Neymar lindo maravilhoso</td>
-          <td>bola de ouro</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Paquetá rei das dançinhas</td>
-          <td>kaká com cancer</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Vini Jr</td>
-          <td>Malvadão</td>
+        <tr v-for="jogador in jogadores" :key="jogador.id">
+          <td>{{ jogador.id }}</td>
+          <td>{{ jogador.nome }}</td>
+          <td>Posição</td>
         </tr>
       </tbody>
     </table>

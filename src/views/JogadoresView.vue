@@ -1,13 +1,24 @@
 <script>
+import { v4 as uuidv4 } from "uuid";
 export default {
   data() {
     return {
       jogadores: [
-        { id: 1, nome: "Jogador1" },
-        { id: 2, nome: "Jogador2" },
-        { id: 3, nome: "Jogador3" },
+        { id: "9a9223c6-325d-4fb3-9a3d-517832c6f30a", nome: "Jogador 1" },
+        { id: "2c05c64c-1c44-43c3-8c2a-db120c5444ec", nome: "Jogador 2" },
+        { id: "fe7567c1-49b4-46dc-adc4-0c94a3535924", nome: "Jogador 3" },
       ],
+      novo_time: "",
     };
+  },
+  methods: {
+    salvar() {
+      const novo_id = uuidv4();
+      this.jogadores.push({
+        id: novo_id,
+        nome: this.novo_jogador,
+      });
+    },
   },
 };
 </script>
@@ -22,11 +33,11 @@ export default {
 
   <div class="form-input">
     <input type="text" placeholder="Nome do jogador" />
-    <button>Salvar</button>
+    <button @click="salvar">Salvar</button>
   </div>
   <div class="form-input">
     <input type="text" placeholder="Time" />
-    <button>Salvar</button>
+    <button @click="salvar">Salvar</button>
   </div>
 
   <div class="list-jogadores">
